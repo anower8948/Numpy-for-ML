@@ -1,0 +1,319 @@
+⭐ 150 NumPy Coding Problems (Only Coding Tasks)
+
+(Easy → Medium → Hard → University → Professional)
+
+✅ LEVEL 1 — EASY (30 Coding Tasks)
+
+Create a 1D array of numbers 1–20.
+
+Create a 5×5 matrix of zeros.
+
+Create a 4×4 matrix of ones.
+
+Create a 3×3 identity matrix.
+
+Create an array of even numbers from 2 to 50.
+
+Create an array of 30 random integers between 0 and 100.
+
+Create an array of 20 random floats between 0–1.
+
+Create a float32 array of numbers 1–10.
+
+Create an int8 array of numbers 1–10.
+
+Create an array of 10 consecutive dates.
+
+Slice the first 6 elements of an array.
+
+Slice the last 4 elements.
+
+Reverse an array using slicing.
+
+Extract the 2nd row from a 3×4 matrix.
+
+Extract the 4th column.
+
+Extract a 2×2 block from a 3×3 matrix.
+
+Add 10 to every element in an array.
+
+Multiply all elements by -3.
+
+Compute element-wise square.
+
+Compute square root of all elements.
+
+Element-wise add two arrays.
+
+Element-wise multiply two arrays.
+
+Compute the sum of an array.
+
+Compute mean of an array.
+
+Compute standard deviation.
+
+Compute row-wise sum of a matrix.
+
+Compute column-wise sum.
+
+Reshape a 12-element array into 3×4.
+
+Flatten a 2D matrix.
+
+Convert a 1D array to column vector.
+
+✅ LEVEL 2 — MEDIUM (40 Coding Tasks)
+
+Extract all even numbers from an array.
+
+Extract all values > 50 from an array.
+
+Replace all negative values in an array with 0.
+
+Count how many values > 20.
+
+Get all odd values.
+
+Add a row vector to a 3×3 matrix using broadcasting.
+
+Add a column vector to a 4×4 matrix.
+
+Celsius → Fahrenheit using broadcasting.
+
+Normalize rows of a matrix using broadcasting.
+
+Multiply each column by a given vector.
+
+Extract elements at positions [0,3,5,7].
+
+Select rows [0,2,4] from a matrix.
+
+Select element positions [[0,1],[2,2],[3,0]].
+
+Reverse row order of matrix.
+
+Reverse column order.
+
+Generate a 6×6 random integer matrix (0–100).
+
+Generate 500 normal distributed samples.
+
+Generate 500 Poisson distributed samples.
+
+Shuffle a 1D array.
+
+Randomly choose 10 values with probabilities.
+
+Vertically stack two arrays.
+
+Horizontally stack two arrays.
+
+Column-stack two 1D arrays.
+
+Split an array into 4 equal parts.
+
+Split an array into 3 unequal parts.
+
+Split a 4×4 matrix into four 2×2 blocks.
+
+Sort an array.
+
+Sort a matrix row-wise.
+
+Sort a matrix column-wise.
+
+Use argsort to sort an array.
+
+Remove duplicates from an array.
+
+Count occurrences of each unique value.
+
+Find union of two arrays.
+
+Find intersection of two arrays.
+
+Find difference A – B.
+
+Convert a 1D array into a row vector.
+
+Convert a 1D array into a column vector.
+
+Reshape 24 numbers into 3×4×2.
+
+Tile [1,2,3] five times.
+
+Repeat each element in [1,2,3] four times.
+
+✅ LEVEL 3 — HARD (40 Coding Tasks)
+
+Compute determinant of a 3×3 matrix.
+
+Compute inverse of a 3×3 matrix.
+
+Compute rank of a matrix.
+
+Compute eigenvalues of a matrix.
+
+Compute eigenvectors.
+
+Compute SVD of a random matrix.
+
+Verify U Σ Vᵀ = A for an SVD.
+
+Multiply a 20×10 with a 10×5 matrix.
+
+Compute trace of a matrix.
+
+Solve a system Ax=b of size 3.
+
+Compute Frobenius norm of a matrix.
+
+Select rows where sum > 20.
+
+Select rows where first column > second column.
+
+Replace values < mean with mean.
+
+Replace values > mean+std with mean.
+
+Get diagonal of a matrix.
+
+Replace matrix diagonal with 0.
+
+Count zero values in a matrix.
+
+Extract positive values only.
+
+Simulate 1 million coin flips.
+
+Simulate rolling a dice 10,000 times.
+
+Generate a random walk of length 1000.
+
+Simulate 500 people’s heights (normal distribution).
+
+Bootstrap sample a dataset (random with replacement).
+
+Compute y = x³ + 2x² + 3x for x=0–100.
+
+Vectorize a function f(x)=x²+1.
+
+Compute element-wise sigmoid.
+
+Compute element-wise ReLU.
+
+Compute softmax of a vector.
+
+Compute pairwise distances of 10 random 2D points.
+
+Compute cosine similarity matrix of 10 random vectors.
+
+Normalize each row of a matrix to unit length.
+
+Min-max scale each column of matrix.
+
+Standardize each column (z-score).
+
+Compute column-wise variance.
+
+Extract rows where max value > 50.
+
+Remove all negative rows (rows containing negative value).
+
+Replace NaN values with column means.
+
+Detect NaN values using boolean mask.
+
+Reshape a 1D array to 3D of compatible shape.
+
+✅ LEVEL 4 — UNIVERSITY EXAM LEVEL (20 Coding Tasks)
+
+(Still only coding)
+
+Demonstrate view vs copy using ravel() and flatten().
+
+Show broadcasting between shape (3,1) and (1,3).
+
+Show difference between dot(), matmul(), and @.
+
+Compute correlation matrix manually.
+
+Compute covariance matrix manually.
+
+Sort a matrix by a specific column.
+
+Use np.where to label numbers >50 as 1 else 0.
+
+Compute Mean Squared Error (MSE) between two arrays.
+
+Compute accuracy between y_true and y_pred (binary).
+
+Remove duplicate rows from a matrix.
+
+Find most frequent value in array using NumPy only.
+
+Extract columns 0 and 2 from a 5×5 matrix.
+
+Split dataset into train/test without sklearn.
+
+Replace outliers (>|mean+2std|) with median.
+
+Swap first and last rows of a matrix.
+
+Shuffle rows of a matrix.
+
+Generate a checkerboard pattern using NumPy.
+
+Generate a matrix with random integers and sort each row.
+
+Compute cumulative sum of an array.
+
+Compute cumulative product.
+
+✅ LEVEL 5 — PROFESSIONAL / ML ENGINEER LEVEL (20 Coding Tasks)
+
+Implement polynomial features (degree 2) using NumPy.
+
+Implement batch normalization (per column).
+
+Implement gradient descent to fit linear regression.
+
+Implement L2-regularized linear regression cost.
+
+Compute cross-entropy loss for binary classification.
+
+Compute softmax for a batch (2D array).
+
+Compute confusion matrix using NumPy only.
+
+Compute precision, recall, F1-score using NumPy only.
+
+One-hot encode an array of class labels.
+
+Decode one-hot encoded labels back to integers.
+
+Compute Euclidean distance matrix for 100 points.
+
+Compute Mahalanobis distance between vectors.
+
+Implement PCA (eigen decomposition).
+
+Project points onto top 2 PCA components.
+
+Implement k-NN distance computation (no loops).
+
+Build dropout mask for input matrix.
+
+Implement gradient of MSE manually.
+
+Simulate 1000 steps of gradient descent.
+
+Implement matrix multiplication manually using broadcasting.
+
+Build a complete linear regression model:
+- Create dataset
+- Train with normal equation
+- Predict
+- Compute MSE
