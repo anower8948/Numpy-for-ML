@@ -1,0 +1,357 @@
+1. What is NumPy and why is it used?
+
+Answer: NumPy is a Python library for numerical computing providing fast arrays and vectorized operations.
+
+2. Create a NumPy array.
+a = np.array([1, 2, 3])
+
+3. Advantages vs Python lists
+
+Answer: Fixed-type, contiguous memory, vectorized operations → faster and lower memory.
+
+4. Check shape and size:
+x = np.arange(12)
+print(x.shape, x.size)
+
+5. Reshape an array
+x = np.arange(12).reshape(3,4)
+
+6. Convert dtype
+x = np.arange(5).astype(np.float32)
+
+7. View vs copy
+a = np.arange(6)
+v = a.view()
+c = a.copy()
+v[0] = 100
+print(a, c)
+
+8. arange vs linspace
+np.arange(0,10,2)
+np.linspace(0,10,5)
+
+9. Zeros & ones
+z = np.zeros((3,3))
+o = np.ones((2,4))
+
+10. Random array
+r = np.random.rand(5,5)
+
+11. Check dtype
+x = np.array([1,2,3])
+print(x.dtype)
+
+12. Array → list
+lst = x.tolist()
+
+13. Broadcasting
+a = np.array([[1,2,3],[4,5,6]])
+b = np.array([1,10,100])
+print(a + b)
+
+14. Universal functions
+np.sqrt(x)
+np.exp(x)
+
+15. Element-wise arithmetic
+print(x + 5, x * 2)
+
+16. Indexing vs slicing
+print(x[2], x[1:4])
+
+17. Axis parameter
+m = np.arange(12).reshape(3,4)
+m.sum(axis=0), m.sum(axis=1)
+
+18. Boolean masking
+x = np.arange(10)
+x[x % 2 == 0]
+
+19. New axis
+x[:, np.newaxis]
+
+20. Count nonzero
+np.count_nonzero(x)
+
+🔢 SECTION B — Indexing, Slicing & Filtering (20)
+21. Slice subarray
+m = np.arange(9).reshape(3,3)
+m[0:2, 1:3]
+
+22. Last column
+m[:, -1]
+
+23. Every second element
+x = np.arange(10)
+x[::2]
+
+24. Reverse order
+x[::-1]
+
+25. Condition filter
+x[x > 5]
+
+26. Fancy row indexing
+m[[0,2]]
+
+27. Submatrix block
+m[1:3, 1:3]
+
+28. Diagonal elements
+np.diag(m)
+
+29. Boolean mask multiple conditions
+x[(x > 2) & (x < 8)]
+
+30. np.where indices
+np.where(x % 2 == 0)
+
+31. Remove elements by value
+x = np.array([1,2,3,2,1])
+x[x != 2]
+
+32. Replace selectively
+x = np.arange(10)
+x[x % 2 == 0] = -1
+
+33. Flatten array
+m.flatten()
+
+34. Reshape w/o copy
+m.ravel()
+
+35. Drop rows via mask
+m = np.arange(12).reshape(3,4)
+mask = ~(m[:,0] < 2)
+m[mask]
+
+36. Advanced indexing
+x = np.arange(10)
+idx = [0,3,5]
+x[idx]
+
+37. Reverse rows/columns
+m[::-1, :]
+m[:, ::-1]
+
+38. Filter even
+x[x % 2 == 0]
+
+39. Detect duplicate rows
+_, idx = np.unique(m, axis=0, return_index=True)
+m[np.sort(idx)]
+
+40. Extract coordinate pairs
+coords = [(0,1),(1,2)]
+np.array([m[i,j] for i,j in coords])
+
+✖ SECTION C — Mathematical, Statistical & Aggregate (20)
+41. Sum along axes
+m.sum(axis=0), m.sum(axis=1)
+
+42. Mean, median, mode
+np.mean(x), np.median(x)
+
+
+(Mode in pure NumPy is manual)
+
+vals, counts = np.unique(x, return_counts=True)
+vals[np.argmax(counts)]
+
+43. Std & variance
+np.std(x), np.var(x)
+
+44. Min/max
+x.min(), x.max()
+
+45. Cumulative sum & product
+np.cumsum(x), np.cumprod(x)
+
+46. Quantiles
+np.quantile(x, [0.25,0.5,0.75])
+
+47. Log/exp
+np.log(x+1), np.exp(x)
+
+48. Normalize
+(x - x.mean()) / x.std()
+
+49. Apply vectorized
+np.square(x)
+
+50. Euclidean distance
+a = np.array([1,2])
+b = np.array([4,6])
+np.linalg.norm(a-b)
+
+51. Dot & matrix product
+np.dot(a,a), a @ a
+
+52. Outer product
+np.outer(a,b)
+
+53. Cross product
+np.cross([1,0,0],[0,1,0])
+
+54. np.where substitution
+np.where(x<5, 0, 1)
+
+55. Correlation coefficients
+np.corrcoef(m, rowvar=False)
+
+56. Histogram counts
+np.histogram(x, bins=5)
+
+57. Unique & counts
+np.unique(x, return_counts=True)
+
+58. Percentile score
+np.percentile(x, 90)
+
+59. Rank statistics
+np.argsort(np.argsort(x))
+
+60. np.vectorize
+f = np.vectorize(lambda v: v**2)
+f(x)
+
+🧮 SECTION D — Linear Algebra & ML-focused (20)
+61. Transpose & inverse
+A = np.array([[1,2],[3,4]])
+A.T, np.linalg.inv(A)
+
+62. Determinant
+np.linalg.det(A)
+
+63. Solve linear system
+b = np.array([5,11])
+np.linalg.solve(A,b)
+
+64. Eigenvalues/vectors
+w,v = np.linalg.eig(A)
+
+65. SVD
+U,S,Vt = np.linalg.svd(A)
+
+66. PCA
+cov = np.cov(m, rowvar=False)
+w,v = np.linalg.eig(cov)
+
+67. Frobenius norm
+np.sqrt((A**2).sum())
+
+68. Positive definite check
+np.all(np.linalg.eigvals(A) > 0)
+
+69. Matrix chain multiply
+# example: np.dot(np.dot(A,B),C)
+
+70. Custom matmul
+np.sum(A[:,:,None] * B[None,:,:], axis=1)
+
+71. Batch dot
+np.einsum('ijk,ik->ij', np.random.rand(5,3,3), np.ones(3))
+
+72. dot vs matmul vs @
+np.dot(A,B), A @ B, np.matmul(A,B)
+
+73. Pseudo-inverse
+np.linalg.pinv(A)
+
+74. Whitening
+D = np.diag(1/np.sqrt(S))
+W = v @ D @ v.T
+
+75. Gradient descent numeric
+theta=0
+for _ in range(1000):
+    grad = 2*(theta-5)
+    theta -= 0.01*grad
+
+76. Batch normalization
+X_norm = (m - m.mean(0)) / m.std(0)
+
+77. Softmax batch
+def softmax(x):
+    e = np.exp(x - np.max(x, axis=1, keepdims=True))
+    return e / e.sum(axis=1, keepdims=True)
+
+78. Cosine similarity
+norm = np.linalg.norm(m,axis=1)
+sim = m @ m.T / (norm[:,None]*norm[None,:])
+
+79. One-hot encode
+labels = np.array([0,2,1])
+oh = np.eye(labels.max()+1)[labels]
+
+80. Mahalanobis
+inv_cov = np.linalg.inv(np.cov(m,rowvar=False))
+dist = np.sqrt((m - m.mean(0)) @ inv_cov @ (m - m.mean(0)).T)
+
+⚙️ SECTION E — Efficiency & Practical Coding (20)
+81. Vectorize loops
+# slow: [i*2 for i in x]
+y = x*2
+
+82. Measure performance
+import time
+t0=time.time(); x*2; print(time.time()-t0)
+
+83. np.einsum usage
+np.einsum('ij,kj->ik', m, m)
+
+84. float32 vs float64
+a = np.array([1,2], dtype=np.float32)
+b = np.array([1,2], dtype=np.float64)
+
+85. Sliding window views
+from numpy.lib.stride_tricks import sliding_window_view
+sliding_window_view(x, window_shape=3)
+
+86. Large dataset memory
+# use dtype smaller, e.g., np.int16
+
+87. Replicate arrays
+np.tile([1,2], 5)
+
+88. Shuffle in-place
+np.random.shuffle(x)
+
+89. Random seed
+np.random.seed(42)
+
+90. Stratified sampling
+# pseudo
+idx = np.argsort(labels)
+
+91. Filter 3D masks
+arr3d[arr3d[...,0] > 0]
+
+92. boolean any/all
+np.any(m>2, axis=1), np.all(m>0, axis=1)
+
+93. Conditional assign
+np.place(x, x<0, 0)
+
+94. meshgrid
+X,Y = np.meshgrid(range(3),range(3))
+
+95. memory-mapped
+mm = np.memmap('data.dat', dtype='float32', mode='w+', shape=(1000,1000))
+
+96. Vectorize user func
+f = np.vectorize(lambda v: v**3)
+f(x)
+
+97. Handle NaN/Inf
+np.nan_to_num(arr, nan=0.0, posinf=1e6)
+
+98. Custom histogram
+bins = np.arange(0,11)
+counts = np.array([(x >= i) & (x < i+1).sum() for i in bins[:-1]])
+
+99. Segment equal batches
+np.array_split(x, 5)
+
+100. Reduce memory
+x = x.astype(np.float32)
