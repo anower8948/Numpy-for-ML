@@ -1,0 +1,213 @@
+📘 100 NumPy Interview Questions
+
+(Clean, numbered — ready for coding practice)
+
+🧱 SECTION A — Basics & Definitions (20)
+
+What is NumPy and why is it used?
+
+How do you create a NumPy array?
+
+What advantages do NumPy arrays have over Python lists?
+
+How do you check the shape and size of an array?
+
+How do you reshape an array?
+
+How do you convert an array to a different dtype?
+
+What is the difference between a view and a copy?
+
+What is the purpose of np.arange() vs np.linspace()?
+
+How do you create arrays of zeros and ones?
+
+How do you generate a random NumPy array?
+
+How do you check the data type of a NumPy array?
+
+How do you convert an array to a Python list?
+
+Explain broadcasting in NumPy.
+
+What are universal functions (ufuncs)?
+
+How do you perform element-wise arithmetic operations?
+
+How do you use indexing vs slicing?
+
+What is the axis parameter?
+
+Explain how boolean masking works.
+
+How do you add a new axis to an array?
+
+How do you count nonzero elements in an array?
+
+🔢 SECTION B — Indexing, Slicing & Filtering (20)
+
+How to slice a subarray from a 2D array?
+
+Extract the last column from a matrix.
+
+Extract every second element using slicing.
+
+Reverse the order of elements in an array.
+
+Extract elements that satisfy a condition.
+
+How to select rows using fancy indexing?
+
+How to select a block (submatrix) from a matrix?
+
+Extract diagonal elements of a matrix.
+
+How to use boolean masks with multiple conditions?
+
+Extract indices of true elements using np.where().
+
+How do you remove elements by value?
+
+How do you replace elements selectively?
+
+How to flatten a multi-dimensional array?
+
+How to reshape without copying memory?
+
+How to index by boolean array to drop rows?
+
+How do you use advanced indexing (integer arrays)?
+
+How to reverse rows or columns of a matrix?
+
+Filter an array for even values.
+
+How to detect duplicated rows?
+
+Extract elements at specific coordinate pairs.
+
+✖ SECTION C — Mathematical, Statistical & Aggregate (20)
+
+Compute the sum of elements along axes.
+
+Compute the mean, median, and mode of a NumPy array.
+
+Compute standard deviation and variance.
+
+Compute min/max along axes.
+
+Compute cumulative sum and product.
+
+Compute quantiles using NumPy.
+
+How to apply logarithmic and exponential functions?
+
+How to normalize data using NumPy?
+
+How to apply vectorized functions across axes?
+
+How to compute Euclidean distance between vectors?
+
+How to compute dot product and matrix product?
+
+How to compute outer product?
+
+How to compute cross product?
+
+How to apply conditional substitution with np.where()?
+
+Compute correlation coefficients between datasets.
+
+Compute histogram counts with np.histogram().
+
+Compute unique elements and counts.
+
+How to find the percentile score of array values?
+
+Compute rank statistics of array elements.
+
+Apply custom vector functions using np.vectorize().
+
+🧮 SECTION D — Linear Algebra & ML-focused (20)
+
+Compute matrix transpose and inverse.
+
+Compute determinant of a matrix.
+
+Solve a system of linear equations with np.linalg.solve().
+
+Compute eigenvalues and eigenvectors.
+
+Compute singular value decomposition (SVD).
+
+How do you perform PCA using NumPy?
+
+Compute Frobenius norm manually.
+
+Check if a matrix is positive definite.
+
+Optimize matrix chain multiplications.
+
+Implement custom matrix multiplication manually.
+
+How to compute batch dot products efficiently?
+
+Compare np.dot, @, and np.matmul().
+
+Compute pseudo-inverse using np.linalg.pinv().
+
+How to apply whitening transform using NumPy?
+
+How to implement gradient descent numeric updates?
+
+How to perform batch normalization?
+
+How to compute softmax for a batch with NumPy?
+
+Compute cosine similarity between rows.
+
+Implement one-hot encoding manually.
+
+Implement Mahalanobis distance computation.
+
+⚙️ SECTION E — Efficiency & Practical Coding (20)
+
+How to vectorize loops to avoid Python loops?
+
+How to measure NumPy code performance?
+
+How to use np.einsum() for efficient algebra?
+
+Compare float32 vs float64 performance.
+
+How to use sliding window views for moving averages?
+
+How to handle large datasets memory efficiently?
+
+How to replicate arrays with minimal memory overhead?
+
+How to shuffle arrays in-place?
+
+How to use random seeds for reproducibility?
+
+How to perform stratified sampling with NumPy?
+
+How to apply masks to filter 3D arrays?
+
+Efficient boolean aggregation (any / all) across axes.
+
+Efficient conditional assignment across large arrays.
+
+How to use np.meshgrid() for grid generation?
+
+How to use memory-mapped arrays (np.memmap)?
+
+How to vectorize user-defined functions safely?
+
+How to handle NaN and Inf values robustly?
+
+How to implement a custom histogram without np.histogram()?
+
+How to segment arrays into equal batches?
+
+How to reduce memory usage of large NumPy arrays?
