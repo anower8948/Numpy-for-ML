@@ -1,0 +1,41 @@
+🔹 Practice Problems (Day 4)
+
+Reshape a 1D array into 2D.
+
+Flatten a matrix.
+
+Use ravel vs flatten.
+
+Convert a 1D array to row & column vector.
+
+Stack arrays vertically.
+
+Stack arrays horizontally.
+
+Column-stack two arrays.
+
+Split array into equal parts.
+
+Split array into unequal parts.
+
+Split matrix into blocks.
+
+Sort a 1D array.
+
+Sort a matrix row-wise.
+
+Sort a matrix column-wise.
+
+Get sorted indices using argsort.
+
+Remove duplicate values.
+
+Count occurrences of values.
+
+Find union of two arrays.
+
+Find intersection.
+
+Find set difference.
+
+Tile a pattern multiple times.
