@@ -1,0 +1,42 @@
+DAY 3 — Indexing, Slicing, Masking
+🔹 Practice Problems (Day 3)
+
+Extract first 5 elements from an array.
+
+Extract last 3 elements.
+
+Reverse an array using slicing.
+
+Extract every 3rd element.
+
+Extract a specific row from a matrix.
+
+Extract a specific column.
+
+Extract a submatrix.
+
+Replace all negative values with zero.
+
+Extract all positive values.
+
+Count values greater than a threshold.
+
+Extract rows based on condition.
+
+Use fancy indexing to select elements.
+
+Reorder array using index array.
+
+Reverse rows of a matrix.
+
+Reverse columns of a matrix.
+
+Extract diagonal elements.
+
+Replace diagonal with zeros.
+
+Mask odd values.
+
+Find indices where condition is true.
+
+Remove rows containing negative values.
