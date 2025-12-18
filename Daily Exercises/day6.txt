@@ -1,0 +1,42 @@
+DAY 6 — Linear Algebra (ML Core)
+🔹 Practice Problems (Day 6)
+
+Matrix multiplication.
+
+Compute transpose.
+
+Compute determinant.
+
+Compute inverse.
+
+Solve linear system Ax=b.
+
+Compute eigenvalues.
+
+Compute eigenvectors.
+
+Perform SVD.
+
+Reconstruct matrix from SVD.
+
+Compute Frobenius norm.
+
+Compute L1 and L2 norms.
+
+Check matrix rank.
+
+Compute cosine similarity.
+
+Compute Euclidean distance matrix.
+
+Implement PCA manually.
+
+Project data using PCA.
+
+Compute batch dot products.
+
+Compare dot, matmul, @.
+
+Implement Mahalanobis distance.
+
+Check positive definiteness.
