@@ -1,0 +1,42 @@
+DAY 7 — ML-Style End-to-End Problems
+🔹 Practice Problems (Day 7)
+
+Normalize dataset row-wise.
+
+Normalize dataset column-wise.
+
+One-hot encode labels.
+
+Decode one-hot labels.
+
+Implement train-test split.
+
+Shuffle dataset with labels.
+
+Implement linear regression (normal equation).
+
+Implement gradient descent.
+
+Compute MSE loss.
+
+Compute accuracy.
+
+Implement softmax.
+
+Implement batch softmax.
+
+Implement dropout mask.
+
+Simulate random walk.
+
+Monte-Carlo π estimation.
+
+Bootstrap sampling.
+
+Compute confusion matrix.
+
+Implement precision & recall.
+
+Implement k-NN distance computation.
+
+Build a mini ML pipeline using NumPy only.
