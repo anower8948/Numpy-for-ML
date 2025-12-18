@@ -1,0 +1,41 @@
+🔹 Practice Problems (Day 1)
+
+Create a 1D NumPy array from 1 to 50.
+
+Create a 5×5 matrix filled with zeros.
+
+Create a 3×4 matrix filled with ones.
+
+Create an identity matrix of size 6.
+
+Create an array of even numbers from 2 to 100.
+
+Create an array of 20 equally spaced numbers between 0 and 1.
+
+Create an array of 15 random integers between 10 and 50.
+
+Create a float32 array from 1 to 10.
+
+Create an int8 array from 1 to 10.
+
+Create a boolean array from a list.
+
+Convert an integer array to float.
+
+Create a complex number array.
+
+Create a datetime64 array of 7 consecutive days.
+
+Check dtype, shape, size of an array.
+
+Change dtype without modifying original array.
+
+Create an empty array and fill it later.
+
+Create a constant array filled with value 9.
+
+Compare memory size of int32 vs int64 arrays.
+
+Copy an array and verify independence.
+
+Create a range array using arange.
