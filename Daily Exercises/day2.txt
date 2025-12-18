@@ -1,0 +1,42 @@
+DAY 2 — Broadcasting, Math Ops, Random
+🔹 Practice Problems (Day 2)
+
+Add a scalar to a 2D array.
+
+Multiply a vector with a matrix using broadcasting.
+
+Add a row vector to a matrix.
+
+Add a column vector to a matrix.
+
+Convert Celsius to Fahrenheit using broadcasting.
+
+Normalize an array using broadcasting.
+
+Square all elements using vectorization.
+
+Apply sqrt, log, exp to an array.
+
+Compute element-wise max between two arrays.
+
+Generate a 5×5 random float matrix.
+
+Generate 1000 samples from normal distribution.
+
+Generate 500 samples from Poisson distribution.
+
+Set a random seed and reproduce results.
+
+Shuffle a 1D array.
+
+Randomly choose elements with probabilities.
+
+Clip values between 0 and 1.
+
+Use np.where to replace values.
+
+Compute absolute values.
+
+Round values to 2 decimals.
+
+Compare performance of loop vs vectorized operation
