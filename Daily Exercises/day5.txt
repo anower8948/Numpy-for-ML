@@ -1,0 +1,42 @@
+DAY 5 — Aggregation, Stats, Performance
+🔹 Practice Problems (Day 5)
+
+Compute sum, mean, std of array.
+
+Compute row-wise sum.
+
+Compute column-wise mean.
+
+Compute min and max.
+
+Compute cumulative sum.
+
+Compute cumulative product.
+
+Compute percentile.
+
+Compute variance manually.
+
+Normalize array using z-score.
+
+Min-max scale data.
+
+Detect outliers using z-score.
+
+Replace outliers with median.
+
+Compute correlation matrix.
+
+Compute covariance matrix.
+
+Use np.any and np.all.
+
+Measure execution time.
+
+Compare float32 vs float64.
+
+Count NaN values.
+
+Replace NaN with mean.
+
+Memory usage optimization.
